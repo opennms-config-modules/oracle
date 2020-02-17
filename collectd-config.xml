@@ -1,0 +1,10 @@
+<service name="Oracle" interval="300000" user-defined="false" status="on">
+    <parameter key="collection" value="Oracle"/>
+    <parameter key="thresholding-enabled" value="true"/>
+    <parameter key="driver" value="oracle.jdbc.driver.OracleDriver"/>
+    <parameter key="user" value="oracle"/>
+    <parameter key="password" value="oracle"/>
+    <parameter key="url" value="jdbc:oracle:thin:@JDBC_HOSTNAME:1521/XE"/>
+</service>
+
+<collector service="Oracle" class-name="org.opennms.netmgt.collectd.JdbcCollector"/>

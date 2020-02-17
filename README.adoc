@@ -25,3 +25,26 @@ cp ${HOME}/opennms-config-workspace/oracle/events/*.xml ${OPENNMS_HOME}/etc/even
 ----
 <event-file>events/oracle.events.xml</event-file>
 ----
+
+== Datacollection
+
+Note: This config is currently untested.
+
+=== MySQL driver
+
+Download the driver here https://mvnrepository.com/artifact/oracle/oracle-jdbc
+and save the jar file into `/var/opennms/lib/`.
+
+=== Data Collection Collection
+
+.Install datacollection configuration
+
+Add the content provided in `datacollection/oracle.xml` into `jdbc-datacollection-config.xml`
+
+Add the content provided in `collectd-config-xml` into the existing one in your setup.
+
+Add the content provided in `datacollection-config.xml` into the existing one in your setup.
+
+== Graphs
+
+Currently not available.
